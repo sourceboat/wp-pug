@@ -4,6 +4,9 @@
 [![Packagist Downloads](https://img.shields.io/packagist/dt/sourceboat/wp-pug.svg?style=flat-square)](https://packagist.org/packages/sourceboat/wp-pug)
 [![Build Status](https://img.shields.io/travis/sourceboat/wp-pug.svg?style=flat-square)](https://travis-ci.org/sourceboat/wp-pug)
 
+Use [Pug](https://pugjs.org/) template engine in [WordPress](https://wordpress.org/).
+It uses [pug-php](https://github.com/pug-php/pug) under the hood.
+
 ## Installation
 
 To use this plugin you need to setup your WordPress installation via a Composer setup like [Bedrock](https://github.com/roots/bedrock). Then you can install it via:

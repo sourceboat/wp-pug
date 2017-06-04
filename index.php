@@ -4,7 +4,7 @@
  * Plugin Name: WP Pug
  * Plugin URI: https://github.com/sourceboat/wp-pug/
  * Description: Use Pug template engine in WordPress.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Sourceboat
  * Author URI: https://sourceboat.com/
  * License: MIT License

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f52cdab6d70ca908e070c64fc0b543d",
+    "content-hash": "c505c3384fe4c1c01fff63145cdb08d0",
     "packages": [
         {
             "name": "composer/installers",
@@ -119,6 +119,252 @@
                 "zikula"
             ],
             "time": "2017-04-24T06:37:16+00:00"
+        },
+        {
+            "name": "js-phpize/js-phpize",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pug-php/js-phpize.git",
+                "reference": "04f1f092e4048b89f63a9b69d322b4c2b43a504c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pug-php/js-phpize/zipball/04f1f092e4048b89f63a9b69d322b4c2b43a504c",
+                "reference": "04f1f092e4048b89f63a9b69d322b4c2b43a504c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": ">=4.8 <6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JsPhpize": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Katarn",
+                    "email": "kylekatarnls@gmail.com"
+                }
+            ],
+            "description": "Convert js-like syntax to standalone PHP code.",
+            "time": "2017-05-31T09:23:06+00:00"
+        },
+        {
+            "name": "nodejs-php-fallback/nodejs-php-fallback",
+            "version": "1.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kylekatarnls/nodejs-php-fallback.git",
+                "reference": "b7a1e744ec5ad3e642da2c5d20c6fc69047e4b37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kylekatarnls/nodejs-php-fallback/zipball/b7a1e744ec5ad3e642da2c5d20c6fc69047e4b37",
+                "reference": "b7a1e744ec5ad3e642da2c5d20c6fc69047e4b37",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "composer/composer": "^1.2",
+                "phpunit/phpunit": ">=4.8 <6.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "NodejsPhpFallback\\ComposerPlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "NodejsPhpFallback\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Kyle",
+                    "email": "kylekatarnls@gmail.com"
+                }
+            ],
+            "description": "Allow you to call node.js module or scripts throught PHP and call a fallback function if node.js is not available",
+            "time": "2017-05-12T10:16:01+00:00"
+        },
+        {
+            "name": "pug-php/pug",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pug-php/pug.git",
+                "reference": "403c8c0a3af5e71b6cea8c44a50564caf7052bd6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pug-php/pug/zipball/403c8c0a3af5e71b6cea8c44a50564caf7052bd6",
+                "reference": "403c8c0a3af5e71b6cea8c44a50564caf7052bd6",
+                "shasum": ""
+            },
+            "require": {
+                "js-phpize/js-phpize": "^1.2",
+                "nodejs-php-fallback/nodejs-php-fallback": "^1.2",
+                "php": ">=5.3.0"
+            },
+            "replace": {
+                "kylekatarnls/jade-php": "self.version"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": ">=0.3",
+                "phpunit/phpunit": ">=4.8 <6.0"
+            },
+            "type": "library",
+            "extra": {
+                "npm": {
+                    "pug-cli": "^1.0.0-alpha6"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pug\\": "src/",
+                    "Jade\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Janez Troha",
+                    "email": "janez.troha@gmail.com",
+                    "homepage": "http://flavors.me/dz0ny",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Luke GB",
+                    "email": "git@lukegb.com",
+                    "homepage": "http://twitter.com/lukegb",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Ronan Tessier",
+                    "email": "ronan.tessier@vaconsulting.lu",
+                    "homepage": "http://github.com/ronan-gloo",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "kylekatarnls",
+                    "email": "jade-php@selfbuild.fr",
+                    "homepage": "http://github.com/kylekatarnls",
+                    "role": "Developer"
+                },
+                {
+                    "name": "volter9",
+                    "homepage": "https://github.com/volter9",
+                    "role": "Developer"
+                },
+                {
+                    "name": "sisoftrg",
+                    "homepage": "https://github.com/sisoftrg",
+                    "role": "Developer"
+                },
+                {
+                    "name": "hackaugusto",
+                    "homepage": "https://github.com/hackaugusto",
+                    "role": "Developer"
+                },
+                {
+                    "name": "peniar",
+                    "homepage": "https://github.com/peniar",
+                    "role": "Developer"
+                },
+                {
+                    "name": "NSinopoli",
+                    "homepage": "https://github.com/NSinopoli",
+                    "role": "Developer"
+                },
+                {
+                    "name": "DJRanger",
+                    "homepage": "https://github.com/DJRanger",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "fcrosfly",
+                    "homepage": "https://github.com/fcrosfly",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Soviut",
+                    "homepage": "http://github.com/Soviut",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "just-paja",
+                    "homepage": "http://github.com/just-paja",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "cjonasw",
+                    "homepage": "http://github.com/cjonasw",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "s4msung",
+                    "homepage": "http://github.com/s4msung",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "sadjow",
+                    "homepage": "http://github.com/sadjow",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "hkjels",
+                    "homepage": "http://github.com/hkjels",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "krizalys",
+                    "homepage": "http://github.com/krizalys",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "sszigeti",
+                    "homepage": "http://github.com/sszigeti",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "konstantin.kudryashov@knplabs.com",
+                    "homepage": "http://about.me/everzet",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Marco \"Debo\" De Bortoli",
+                    "homepage": "https://github.com/debo",
+                    "role": "contributor"
+                }
+            ],
+            "description": "HAML-like template engine for PHP 5.3",
+            "homepage": "https://github.com/pug-php/pug",
+            "keywords": [
+                "jade",
+                "minification",
+                "pug",
+                "template"
+            ],
+            "time": "2017-05-29T14:34:40+00:00"
         },
         {
             "name": "sourceboat/wp-autoloader",
