@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "lint": "vendor/bin/phpcs --extensions=php --ignore=vendor/ .",
+    "package": "zip -r wp-pug.zip . -x '.git/*'",
+    "precommit": "yarn run lint"
+  },
+  "dependencies": {
+    "husky": "^0.13.4"
+  }
+}
