@@ -1,0 +1,21 @@
+language: php
+php:
+- 5.6
+- 7.0
+- 7.1
+cache:
+  directories:
+  - "$HOME/.composer/cache"
+  - vendor
+before_install:
+- phpenv config-rm xdebug.ini
+- composer self-update
+- nvm install 6.9
+- nvm use 6.9
+- curl -o- -L https://yarnpkg.com/install.sh | bash
+- export PATH=$HOME/.yarn/bin:$PATH
+install:
+- composer install -o --prefer-dist --no-interaction
+script:
+- yarn run lint
+- yarn run package
