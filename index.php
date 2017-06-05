@@ -19,7 +19,7 @@ add_action('plugins_loaded', function () {
     require_once 'api.php';
 
     // add WP-CLI commands
-    if (class_exists('WP_CLI')) {
+    if (defined('WP_CLI') && WP_CLI) {
         WP_CLI::add_command('pug cache clear', WpPug\CLI\Cache\ClearCommand::class);
         WP_CLI::add_command('pug cache warmup', WpPug\CLI\Cache\WarmupCommand::class);
     }
