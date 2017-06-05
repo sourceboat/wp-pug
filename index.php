@@ -4,7 +4,7 @@
  * Plugin Name: WP Pug
  * Plugin URI: https://github.com/sourceboat/wp-pug/
  * Description: Use Pug template engine in WordPress.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Sourceboat
  * Author URI: https://sourceboat.com/
  * License: MIT License
@@ -19,7 +19,7 @@ add_action('plugins_loaded', function () {
     require_once 'api.php';
 
     // add WP-CLI commands
-    if (class_exists('WP_CLI')) {
+    if (defined('WP_CLI') && WP_CLI) {
         WP_CLI::add_command('pug cache clear', WpPug\CLI\Cache\ClearCommand::class);
         WP_CLI::add_command('pug cache warmup', WpPug\CLI\Cache\WarmupCommand::class);
     }
