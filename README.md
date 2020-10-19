@@ -1,3 +1,5 @@
+:warning: **Deprecated:** This project is not actively maintained anymore. Use it at your own risk.
+
 # WP Pug
 
 [![Packagist](https://img.shields.io/packagist/v/sourceboat/wp-pug.svg?style=flat-square)](https://packagist.org/packages/sourceboat/wp-pug)
